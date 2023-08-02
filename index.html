@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Meal db API</title>
+  <script src="script.js" defer></script>
+  <script src="https://www.youtube.com/iframe_api" defer></script>
+</head>
+<body>
+  <header class="header">
+    <a class="link" href="../">go back</a>
+    <form class="header-search" action="" data-search>
+      <label for="search" hidden>Search</label>
+      <input id="search" type="text" name="search" placeholder="Search for a delicious meal">
+      <button type="submit">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z" />
+        </svg>
+      </button>
+    </form>
+  </header>
+  <main class="main">
+    <section>
+      <h1>Tasty Selections:</h1>
+      <ul class="meals" data-meals-container></ul>
+    </section>
+    <div>
+      <section class="banner" data-banner>
+        <img class="banner-img" src="" alt="" loading="lazy">
+        <p class="banner-copy"></p>
+        <div class="banner-heading-container">
+          <h3 class="banner-heading"></h3>
+          <p class="banner-tags"></p>
+        </div>
+      </section>
+      <section data-search-result></section>
+      <button class="button button--centered hidden" type="button" data-show-more-btn>Show more</button>
+    </div>
+    <div id="playerContainer"></div>
+  </main>
+  <small data-scroll-bottom-anchor></small>
+</body>
+</html>
